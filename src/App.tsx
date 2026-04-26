@@ -4,7 +4,7 @@
  */
 
 import { useState, useEffect, useRef } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation, useNavigate, Link } from 'react-router-dom';
 import { Sidebar } from './components/Sidebar';
 import { HomeView } from './components/HomeView';
 import { MergeTool } from './components/tools/MergeTool';
@@ -380,7 +380,7 @@ function MainLayout() {
 
 export default function App() {
   return (
-    <Router basename="/pdf_saathi">
+    <Router>
       <ScrollToTop />
       <MainLayout />
     </Router>
