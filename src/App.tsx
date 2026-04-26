@@ -380,7 +380,7 @@ function MainLayout() {
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/pdf_saathi">
       <ScrollToTop />
       <MainLayout />
     </Router>
